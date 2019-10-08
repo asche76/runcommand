@@ -1,4 +1,3 @@
-Name:             Description:
 benberob          "Ben Bero Beh (Japan)"
 halley87          "Halley's Comet '87"
 halleys           "Halley's Comet (US)"
