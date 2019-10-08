@@ -1,0 +1,5 @@
+Name:             Description:
+argus             "Argus"
+butasan           "Butasan - Pig's & Bomber's (Japan, English)"
+butasanj          "Butasan (Japan, Japanese)"
+valtric           "Valtric"

@@ -1,0 +1,10 @@
+Name:             Description:
+benberob          "Ben Bero Beh (Japan)"
+halley87          "Halley's Comet '87"
+halleys           "Halley's Comet (US)"
+halleysc87        "Halley's Comet '87"
+halleysc          "Halley's Comet (US)"
+halleycj          "Halley's Comet (Japan, Older)"
+halleyscjp        "Halley's Comet (Japan, prototype)"
+halleyscj         "Halley's Comet (Japan, rev 1)"
+halleyscja        "Halley's Comet (Japan)"
