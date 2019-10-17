@@ -6,7 +6,7 @@
 #					For consoles, hdmi_timings can be set based on emulator or system
 #					Dynamically creates the game_name.zip.cfg file and sets the custom_viewport_height
 #					Dynamically add these parameters (video_allow_rotate = "true" and video_rotation = 1) for vertical games
-#						vertical.txt contains all the mame 0.184 vertical games
+#					vertical.txt contains all the mame 0.184 vertical games
 #					Ability to set custom_viewport_width for arcades/fba
 #					Fix arcade custom_viewport_width for 320x224 and 320x240 resolutions
 #					Added amiga and C64 support
@@ -498,7 +498,7 @@ if [[ "$emul_lr" == "lr" ]]; then
 		echo "Running arcade $rom_resolution timings" >&2
 	
 	elif [ "$rom_resolution" == "336x240" ]; then
-		## crystal castles
+		## atari system 1
 		#vcgencmd hdmi_timings 1920 1 122 247 310 240 1 3 7 12 0 0 0 60 0 40860000 1
 		#vcgencmd hdmi_timings 1680 1 120 160 320 240 1 3 5 14 0 0 0 59.9 0 35781884 1
 		vcgencmd hdmi_timings 1680 1 110 160 310 240 1 3 5 14 0 0 0 59.9 0 35467988 1
