@@ -560,6 +560,22 @@ if [[ "$emul_lr" == "lr" ]]; then
 			fi
 			# end of custom_viewport_width
 			echo "Running arcade XXX x256 timings" >&2
+		elif grep -w "$rom_bn" /opt/retropie/configs/all/nmk16.txt ; then
+			### nmk16
+			#vcgencmd hdmi_timings 1920 1 50 250 250 250 1 8 10 8 0 0 0 57 0 38858040 1
+			#vcgencmd hdmi_timings 1920 1 112 247 320 240 1 8 7 20 0 0 0 57 0 40739325 1
+			vcgencmd hdmi_timings 1536 1 100 160 300 224 1 19 10 26 0 0 0 56.2 0 32864861 1
+			tvservice -e "DMT 87"
+			fbset -depth 8 && fbset -depth 16 -xres 1536 -yres 224
+			# set the custom_viewport_width 
+			if grep "custom_viewport_width" "$rom_fp"".cfg"; then 
+				echo "Existing custom_viewport_width for XXX x240 timings" >&2		
+			else
+				echo -e "custom_viewport_width = \"1536\"" >> "$rom_fp"".cfg"
+				echo "Setting custom_viewport_width=1536 for XXX x256 timings" >&2
+			fi
+			# end of custom_viewport_width
+			echo "Running arcade XXX x256 timings" >&2
 		else
 			### set viewport to 1536 width or test integer scale
 			## e.g. bomb jack / 60hz
